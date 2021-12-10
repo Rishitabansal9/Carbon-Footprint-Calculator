@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cube.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="overlay">
+            <p>"Climate change is not just about carbon dioxide levels and melting polar ice caps. It is about our public health and protecting our Earth for future generations."<br>
+                ― Mike Quigley</p>
+        </div>
+    </header>
+    <div class="wrapper-1">
+        <div class="card">
+            <input type="checkbox" id="card1" class="more" aria-hidden="true">
+            <div class="content">
+                <div class="front" style="background-image: url('https://images.unsplash.com/photo-1529408686214-b48b8532f72c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=986e2dee5c1b488d877ad7ba1afaf2ec&auto=format&fit=crop&w=1350&q=80')">
+                    <div class="inner">
+                        <h2><b>What are carbon footprints?</b></h2>
+                        <label for="card1" class="button" aria-hidden="true">
+                            Details
+                        </label>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <div class="description">
+                            <p>A carbon footprint is a way to measure greenhouse gas emissions. Greenhouse gases are gases such as carbon dioxide and methane that trap heat in the atmosphere and thereby contribute greatly to global warming. A carbon footprint is determined by the sum of these greenhouse gases that are released into the atmosphere either directly or indirectly by our actions (usually in tons per year). This can be applied to individuals, families, companies, events, products and even countries.</p>
+                        </div>
+                        <label for="card1" class="button return" aria-hidden="true">
+                            <i class="fas fa-arrow-left"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <input type="checkbox" id="card2" class="more">
+            <div class="content">
+                <div class="front" style="background-image: url('https://images.unsplash.com/photo-1515263487990-61b07816b324?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c02fb96f9cfc16d3649835b75d1b2033&auto=format&fit=crop&w=1350&q=80')">
+                    <div class="inner">
+                        <h2><b>How to reduce carbon footprints?</b></h2>
+                        <label for="card2" class="button" aria-hidden="true">
+                            Details
+                        </label>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <div class="description">
+                            <p> Here are a few steps you must follow to reduce carbon footprints:</p>
+                            <ul>
+                                <li>Consume local and seasonal products</li>
+                                <li>Limit meat consumption, especially beef</li>
+                                <li>Reduce, reuse, and recycle to waste less</li>
+                                <li>Make sure to buy only what you need, to avoid waste</li>
+                                <li>Switch to a low-carbon energy provider</li>
+                                <li>Choose energy-efficient appliances</li>
+                                <li>Travel less or travel wisely</li>
+                            </ul>
+                        </div> 
+                        <label for="card2" class="button return" aria-hidden="true">
+                            <i class="fas fa-arrow-left"></i>
+                        </label>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    	
+    <div class="wrapper">
+        <div class="rec-prism">
+            <div class="face face-top">
+                <div class="content">
+                    <h2>Q2.How much petrol consumed annualy(in litres):</h2>
+                    <form onsubmit="event.preventDefault()">
+                        <div class="field-wrapper">
+                            <input type="int" name="q2" id="q2" placeholder="Insert petrol used">
+                        </div>
+                        <div class="field-wrapper">
+                            <input type="submit" onclick="showq3()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="face face-front">
+                <div class="content">
+                    <h2>Q1. Total number of members in your family?</h2>
+                    <form onsubmit="event.preventDefault()">
+                        <div class="field-wrapper">
+                            <input type="int" name="q1" id="q1" placeholder = "Insert family members">
+                        </div>
+                        <div class="field-wrapper">
+                            <input type="submit" onclick="showq2()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="face face-back">
+                <div class="content">
+                    <h2>Q5.How much LPG consumed annualy (in kg)::</h2>
+                    <form onsubmit="event.preventDefault()">
+                        <div class="field-wrapper">
+                            <input type="int" name="q5" id="q5" placeholder = "Insert LPG consumed">
+                        </div>
+                        <div class="field-wrapper">
+                            <input type="submit" onclick="Submit()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="face face-right">
+                <div class="content">
+                    <h2>Q3.How much diesel consumed annualy(in litres):</h2>
+                    <form onsubmit="event.preventDefault()">
+                    <div class="field-wrapper">
+                        <input type="int" name="q3" id="q3" placeholder="Insert diesel consumption">
+                    </div>
+                    <div class="field-wrapper">
+                        <input type="submit" onclick="showq4()">
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <div class="face face-left">
+                <div class="content">
+                    <h2>Q4. How much electricity consumed annualy (in KWh):</h2>
+                    <form onsubmit="event.preventDefault()">
+                        <div class="field-wrapper">
+                            <input type="int" name="q4" id="q4" placeholder="Insert electricity Consumption">
+                        </div>
+                        <div class="field-wrapper">
+                            <input type="submit" onclick="showq5()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="face face-bottom">
+                <div class="content" id="thank-you-msg">
+                    <h2>Click on Submit to save answers.</h2>
+                    <form onsubmit="event.preventDefault()">
+                        <div class="field-wrapper">
+                            <input type="submit" onclick=calcCO2() style="margin-top:-8px">
+                        </div>
+                    </form>
+                    <h2>Your Carbon Footprint(in ton of Co2)is:</h2>
+                    <input value="" id=result>
+                </div>        
+            </div>  
+        </div>
+    </div>        
+    <script>
+        let prism = document.querySelector(".rec-prism");
+
+        function showq3(){
+            prism.style.transform = "translateZ(-100px) rotateY( -90deg)";
+        }
+        function showq5(){
+            prism.style.transform = "translateZ(-100px) rotateY( -180deg)";
+        }
+        function Submit(){
+            prism.style.transform = "translateZ(-100px) rotateX( 90deg)"
+        }
+        function showq2(){
+            prism.style.transform = "translateZ(-100px) rotateX( -90deg)";
+        }
+        function showq4(){
+            prism.style.transform = "translateZ(-100px) rotateY( 90deg)";
+        }
+        function calcCO2() {
+            var a = document.getElementById('q1').value;
+            var b = document.getElementById('q2').value;
+            var c = document.getElementById('q3').value;
+            var d = document.getElementById('q4').value;
+            var e = document.getElementById('q5').value;
+            var res=eval((b*2.296+c*2.653+d*0.85+e*2.983)/(a*1000))
+            document.getElementById('result').value = res;
+        }
+    </script>
+</body>
+</html>
